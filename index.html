@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Chatbot</title>
+    <title>Project Intel</title>
+
+    <!-- Styling References - Oscar Only! -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <script
+      src="https://kit.fontawesome.com/6b5c9eea72.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="chatbox">
-      <h1>Chatbot</h1>
-      <p>Enter your message here:</p>
-      <input type="text" id="message" />
-      <button id="send">Send</button>
+    <div class="container">
+      <div class="sidebar">
+        <h1>Project Intel</h1>
+        <ul class="chat-func">
+          <li class="chat-func-item">
+            Clear <i class="fa-solid fa-trash"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="chat-window">
+        <div class="chat-area"></div>
+        <div class="input-area">
+          <input type="text" placeholder="Type your message" />
+          <input type="submit" value="Send" />
+        </div>
+      </div>
     </div>
-    <script src="chatbot.js"></script>
   </body>
 </html>
