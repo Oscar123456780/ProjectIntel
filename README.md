@@ -15,7 +15,7 @@ It's AI service is based on GPT4ALL, by NomicAI.
 
 **The creators of this project are:**  
 _Louis Kent_ (Fullstack Developer) Who developed the backend.  
-_Oscar Zhou_ (Frontend Developer) Who develop the frontend and some backend.
+_Oscar Zhou_ (Frontend Developer) Who developed the frontend and some backend.
 
 Special thanks to **_NomicAI_**.  
 **Links:**  
