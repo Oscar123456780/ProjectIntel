@@ -2,18 +2,15 @@ const send = document.getElementById("submit");
 const clear = document.getElementById("clear");
 const chat = document.getElementById("chat");
 
-function sendRequest() {
+async function sendRequest() {
   const query = document.getElementById("input").value;
   const paragraph = document.createElement("p");
-  const textNode = document.createTextNode(query);
-  paragraph.appendChild(textNode);
-  chat.appendChild(paragraph);
-  console.log(query);
-  fetch("https://api.pawan.krd/v1/chat/completions", {
+
+  let response = await fetch("https://api.pawan.krd/v1/chat/completions", {
     method: "POST",
     headers: {
       Authorization:
-        "Bearer pk-pk-aUKWtOcIbCATnJMfPHQyaLWsQZPhdohFxdxrWpyKJYTzWnrD",
+        "Bearer pk-aUKWtOcIbCATnJMfPHQyaLWsQZPhdohFxdxrWpyKJYTzWnrD",
       "Content-Type": "application/json",
     },
     // body: '{\n    "model": "gpt-3.5-turbo",\n    "max_tokens": 100,\n    "messages": [\n        {\n            "role": "system",\n            "content": "You are an helpful assistant."\n        },\n        {\n            "role": "user",\n            "content": "Who are you?"\n        }\n    ]\n}',
@@ -32,6 +29,11 @@ function sendRequest() {
       ],
     }),
   });
+  const textNode = document.createTextNode(response);
+
+  paragraph.appendChild(textNode);
+  chat.appendChild(paragraph);
+  console.log(query);
   //clear input field
   document.getElementById("input").value = "";
 }
