@@ -1,0 +1,110 @@
+/* Styling References - Oscar Only! */
+
+html {
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+}
+p {
+  background-color: #26323824;
+  padding: 5px;
+  border-radius: 3px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  background-color: #263238;
+  color: #fff;
+  flex: 0 0 300px;
+  padding: 20px;
+}
+
+.sidebar h1 {
+  font-size: 24px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.sidebar .chat-func {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar #clear {
+  padding: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #37474f7a;
+}
+
+.sidebar .chat-func-item:hover {
+  background-color: #37474f;
+}
+
+.chat-window {
+  flex: 1;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-window .chat-area {
+  border: 1px solid #ccc;
+  height: 81.6642vh;
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow-y: scroll;
+  flex-grow: 1;
+}
+
+.chat-window .user-message {
+  background-color: #e1f5fe;
+  color: #000;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  max-width: 70%;
+}
+
+.chat-window .ai-message {
+  background-color: #f1f0f0;
+  color: #000;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  max-width: 70%;
+}
+
+.chat-window .input-area {
+  display: flex;
+}
+
+.chat-window .input-area input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.chat-window .input-area input [type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}

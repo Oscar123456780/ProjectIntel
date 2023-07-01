@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project Intel</title>
+
+    <!-- Styling References - Oscar Only! -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <script
+      src="https://kit.fontawesome.com/6b5c9eea72.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <h1>Project Intel</h1>
+        <ul class="chat-func">
+          <li id="clear" onclick="clearRequest()">Clear</li>
+        </ul>
+      </div>
+      <div class="chat-window">
+        <div class="chat-area" id="chat"></div>
+        <div class="input-area">
+          <input type="text" placeholder="Type your message" id="input" />
+          <button type="submit" id="submit" onclick="sendRequest()">
+            Send </i>
+          </button>
+          <script src="script.js"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
